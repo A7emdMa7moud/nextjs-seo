@@ -29,15 +29,50 @@ export async function generateMetadata({
   const post: BlogPost = await response.json();
 
   return {
-    title: post.title,
-    description: post.body,
-    // openGraph: {
-    //   images: [
-    //     {
-    //       url: post.imageUrl
-    //     }
-    //   ]
-    // }
+    title: `${post.title} | Ahmed Mahmoud MERN Stack Blog`,
+    description: `${post.body.substring(
+      0,
+      150
+    )}... By Ahmed Mahmoud, MERN Stack Developer.`,
+    keywords: [
+      "Ahmed Mahmoud",
+      "MERN Stack",
+      "Blog",
+      "Web Development",
+      "JavaScript",
+      "Full Stack",
+    ],
+    openGraph: {
+      title: `${post.title} | Ahmed Mahmoud MERN Stack Blog`,
+      description: `${post.body.substring(
+        0,
+        150
+      )}... By Ahmed Mahmoud, MERN Stack Developer.`,
+      images: [
+        {
+          url: "https://res.cloudinary.com/test-image-upload-2/image/upload/v1750335983/opengraph-image_j72cxs.png",
+          width: 1200,
+          height: 630,
+          alt: "Ahmed Mahmoud MERN Stack Blog Post Image",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${post.title} | Ahmed Mahmoud MERN Stack Blog`,
+      description: `${post.body.substring(
+        0,
+        150
+      )}... By Ahmed Mahmoud, MERN Stack Developer.`,
+      images: [
+        {
+          url: "https://res.cloudinary.com/test-image-upload-2/image/upload/v1750335983/opengraph-image_j72cxs.png",
+          width: 1200,
+          height: 630,
+          alt: "Ahmed Mahmoud MERN Stack Blog Post Twitter Image",
+        },
+      ],
+    },
   };
 }
 

@@ -8,12 +8,55 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
-    default: "My Awesome Blog",
-    template: "%s - My Awesome Blog",
+    default: "Ahmed Mahmoud | MERN Stack Developer",
+    template: "%s - Ahmed Mahmoud | MERN Stack Developer",
   },
-  description: "Come and read my awesome articles!",
+  description:
+    "Ahmed Mahmoud - MERN Stack developer. Articles, tutorials, and resources about MongoDB, Express, React, Node.js, and modern web development.",
+  keywords: [
+    "Ahmed Mahmoud",
+    "MERN Stack",
+    "MongoDB",
+    "Express",
+    "React",
+    "Node.js",
+    "Web Development",
+    "JavaScript",
+    "Full Stack",
+  ],
   twitter: {
     card: "summary_large_image",
+    title: "Ahmed Mahmoud | MERN Stack Developer",
+    description:
+      "Follow Ahmed Mahmoud for the best MERN Stack tutorials, tips, and web development resources.",
+    images: [
+      {
+        url: "https://res.cloudinary.com/test-image-upload-2/image/upload/v1750335983/opengraph-image_j72cxs.png",
+        width: 1200,
+        height: 630,
+        alt: "Ahmed Mahmoud MERN Stack Twitter Card Image",
+      },
+    ],
+    site: "@ahmedmahmoud",
+  },
+  openGraph: {
+    title: "Ahmed Mahmoud | MERN Stack Developer",
+    description:
+      "Ahmed Mahmoud - MERN Stack developer. Articles, tutorials, and resources about MongoDB, Express, React, Node.js, and modern web development.",
+    images: [
+      {
+        url: "https://res.cloudinary.com/test-image-upload-2/image/upload/v1750335983/opengraph-image_j72cxs.png",
+        secureUrl:
+          "https://res.cloudinary.com/test-image-upload-2/image/upload/v1750335983/opengraph-image_j72cxs.png",
+        // width: 1200,
+        // height: 630,
+        // alt: "Ahmed Mahmoud MERN Stack Open Graph Image",
+      },
+    ],
+    type: "website",
+    locale: "en_US",
+    siteName: "Ahmed Mahmoud | MERN Stack Developer",
+    countryName: "cairo",
   },
 };
 
